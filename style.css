@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: blanchedalmond;
+  border-bottom: 10px solid #000000;
+  position: absolute;
+  top: -140px;
+  transition: top 1s ease-in-out;
+  animation: header 3s ease-in-out infinite;
+}
+
+.header:hover {
+  top: 0;
+}
+.header p {
+  text-align: center;
+  margin: 50px;
+  font-size: 40px;
+  color: deeppink;
+}
+
+@keyframes header {
+  0% {
+    background-color: blanchedalmond;
+  }
+  50% {
+    background-color: aquamarine;
+  }
+  100% {
+    background-color: blanchedalmond;
+  }
+}
+
+
+
+.boxes {
+  width: 150px;
+  height: 150px;
+  background-color: fuchsia;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  animation: animat 5s ease-in-out infinite;
+}
+
+@keyframes animat {
+  0% {
+    top: 150px;
+    left: 150px;
+    background-color: fuchsia;
+  }
+  25% {
+    top: 150px;
+    left: 500px;
+    background-color: darkgreen;
+    border-radius: 50%;
+  }
+  50% {
+    top: 450px;
+    left: 500px;
+    background-color: cornflowerblue;
+    border-radius: 0;
+  }
+  75% {
+    top: 450px;
+    left: 150px;
+    background-color: blue;
+    border-radius: 50%;
+  }
+  100% {
+    top: 150px;
+    left: 150px;
+    background-color: fuchsia;
+  }
+}
